@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}
+UPLOAD
+{% endblock %}
+{% block content %}
+<p>sample text</p>
+<form action = "/uploader/" method = "POST" enctype = "multipart/form-data">
+    <label for="inputFile">File input</label>
+    <input type="file" name="inputFile">
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
